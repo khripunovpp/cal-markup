@@ -7,15 +7,68 @@ html
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,700,900")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Archivo+Black")
 		link(rel='stylesheet', href='css/style.css')
 		style.
 			*,
 			*::after,
 			*::before {
-				outline: 1px solid rgba(255,0,0,.5) !important
+				//- outline: 1px solid rgba(255,0,0,.5) !important
 			}
 		script(src="http://ctr-localhost.ru/vlad/jq.js")
 
 	body
 		.w-page
+			.container
+				main.recipe
+					h1.recipe__title f
+					.recipe__prepTime
+						.prepTime
+							span.prepTime__total
+							span.prepTime__prep
+					.recipe__inner
+						.recipe__ingredients
+							section.ingredients
+								h2.ingredients__title#ingredients-group
+								ul.ingredients__list
+									li.ingredients__item
+										label.ingredients__name#i598 Cucumbers
+											span.ingredients__amount(data-amount-type="other", aria-hidden="true") 2
+											input(type="checkbox", aria-labelledby="ingredients-group i598").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i143 White sugar
+											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 teaspoon
+											input(type="checkbox", aria-labelledby="ingredients-group i143").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i531 Salt
+											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 1/2 teaspons
+											input(type="checkbox", aria-labelledby="ingredients-group i531").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i875 Cloves garlic, finely crushed
+											span.ingredients__amount(data-amount-type="other", aria-hidden="true") 2
+											input(type="checkbox", aria-labelledby="ingredients-group i875").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i314 Seasoned rice vinegar
+											span.ingredients__amount(data-amount-type="tbs", aria-hidden="true") 2 tablespoons
+											input(type="checkbox", aria-labelledby="ingredients-group i314").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i633 Soy sauce
+											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 teaspoon
+											input(type="checkbox", aria-labelledby="ingredients-group i633").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i175 Sesame oil
+											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 teaspoon
+											input(type="checkbox", aria-labelledby="ingredients-group i175").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i111 Red pepper flakes to taste
+											input(type="checkbox", aria-labelledby="ingredients-group i111").ingredients__checkbox
+									li.ingredients__item
+										label.ingredients__name#i369 Toasted sesame seeds
+											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 2 teaspoons
+											input(type="checkbox", aria-labelledby="ingredients-group i369").ingredients__checkbox
+						.recipe__directions
+							section.directions
+								h2.directions__title#directions-group
+								ul.directions__list
+									li.directions__step
