@@ -19,54 +19,54 @@ html
 		script(src="http://ctr-localhost.ru/vlad/jq.js")
 
 	body
-		.w-page
+		main.w-page
 			.container
-				main.recipe
+				article.recipe
 					h1.recipe__title f
 					.recipe__prepTime
-						.prepTime
-							span.prepTime__total
-							span.prepTime__prep
+						.prepTime(aria-label="Ready in 1 Hour 15 Minutes")
+							time.prepTime__total(aria-hidden="true", datetime="15m") 15 m
+							time.prepTime__prep(aria-hidden="true", datetime="1h 15m") 1h 15m
 					.recipe__inner
 						.recipe__ingredients
 							section.ingredients
 								h2.ingredients__title#ingredients-group
-								ul.ingredients__list
+								ul.ingredients__list(aria-labelledby="ingredients-group")
 									li.ingredients__item
-										label.ingredients__name#i598 Cucumbers
+										label.ingredients__name#i598(aria-label="2 Cucumbers") Cucumbers
 											span.ingredients__amount(data-amount-type="other", aria-hidden="true") 2
-											input(type="checkbox", aria-labelledby="ingredients-group i598").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i598").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i143 White sugar
+										label.ingredients__name#i143(aria-label="1 teaspoon White sugar") White sugar
 											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 teaspoon
-											input(type="checkbox", aria-labelledby="ingredients-group i143").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i143").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i531 Salt
+										label.ingredients__name#i531(aria-label="1 1/2 teaspons Salt") Salt
 											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 1/2 teaspons
-											input(type="checkbox", aria-labelledby="ingredients-group i531").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i531").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i875 Cloves garlic, finely crushed
-											span.ingredients__amount(data-amount-type="other", aria-hidden="true") 2
-											input(type="checkbox", aria-labelledby="ingredients-group i875").ingredients__checkbox
+										label.ingredients__name#i875(aria-label="2 cloves Garlic, finely crushed") Cloves garlic, finely crushed
+											span.ingredients__amount(data-amount-type="other", aria-hidden="true") 2 cloves
+											input(type="checkbox", aria-labelledby="i875").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i314 Seasoned rice vinegar
+										label.ingredients__name#i314(aria-label="2 tablespoons Seasoned rice vinegar") Seasoned rice vinegar
 											span.ingredients__amount(data-amount-type="tbs", aria-hidden="true") 2 tablespoons
-											input(type="checkbox", aria-labelledby="ingredients-group i314").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i314").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i633 Soy sauce
+										label.ingredients__name#i633(aria-label="1 teaspoon Soy sauce") Soy sauce
 											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 teaspoon
-											input(type="checkbox", aria-labelledby="ingredients-group i633").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i633").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i175 Sesame oil
+										label.ingredients__name#i175(aria-label="1 teaspoon Sesame oil") Sesame oil
 											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 1 teaspoon
-											input(type="checkbox", aria-labelledby="ingredients-group i175").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i175").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i111 Red pepper flakes to taste
-											input(type="checkbox", aria-labelledby="ingredients-group i111").ingredients__checkbox
+										label.ingredients__name#i111(aria-label="Red pepper flakes to taste") Red pepper flakes to taste
+											input(type="checkbox", aria-labelledby="i111").ingredients__checkbox
 									li.ingredients__item
-										label.ingredients__name#i369 Toasted sesame seeds
+										label.ingredients__name#i369(aria-label="2 teaspoons Toasted sesame seeds") Toasted sesame seeds
 											span.ingredients__amount(data-amount-type="tsp", aria-hidden="true") 2 teaspoons
-											input(type="checkbox", aria-labelledby="ingredients-group i369").ingredients__checkbox
+											input(type="checkbox", aria-labelledby="i369").ingredients__checkbox
 						.recipe__directions
 							section.directions
 								h2.directions__title#directions-group

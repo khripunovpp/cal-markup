@@ -19,61 +19,64 @@
     <script src="http://ctr-localhost.ru/vlad/jq.js"></script>
   </head>
   <body>
-    <div class="w-page">
+    <main class="w-page">
       <div class="container">
-        <main class="recipe">
+        <article class="recipe">
           <h1 class="recipe__title">f</h1>
           <div class="recipe__prepTime">
-            <div class="prepTime"><span class="prepTime__total"></span><span class="prepTime__prep"></span></div>
+            <div class="prepTime" aria-label="Ready in 1 Hour 15 Minutes">
+              <time class="prepTime__total" aria-hidden="true" datetime="15m">15 m</time>
+              <time class="prepTime__prep" aria-hidden="true" datetime="1h 15m">1h 15m</time>
+            </div>
           </div>
           <div class="recipe__inner">
             <div class="recipe__ingredients">
               <section class="ingredients">
                 <h2 class="ingredients__title" id="ingredients-group"></h2>
-                <ul class="ingredients__list">
+                <ul class="ingredients__list" aria-labelledby="ingredients-group">
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i598">Cucumbers<span class="ingredients__amount" data-amount-type="other" aria-hidden="true">2</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i598">
+                    <label class="ingredients__name" id="i598" aria-label="2 Cucumbers">Cucumbers<span class="ingredients__amount" data-amount-type="other" aria-hidden="true">2</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i598">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i143">White sugar<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 teaspoon</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i143">
+                    <label class="ingredients__name" id="i143" aria-label="1 teaspoon White sugar">White sugar<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 teaspoon</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i143">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i531">Salt<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 1/2 teaspons</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i531">
+                    <label class="ingredients__name" id="i531" aria-label="1 1/2 teaspons Salt">Salt<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 1/2 teaspons</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i531">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i875">Cloves garlic, finely crushed<span class="ingredients__amount" data-amount-type="other" aria-hidden="true">2</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i875">
+                    <label class="ingredients__name" id="i875" aria-label="2 cloves Garlic, finely crushed">Cloves garlic, finely crushed<span class="ingredients__amount" data-amount-type="other" aria-hidden="true">2 cloves</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i875">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i314">Seasoned rice vinegar<span class="ingredients__amount" data-amount-type="tbs" aria-hidden="true">2 tablespoons</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i314">
+                    <label class="ingredients__name" id="i314" aria-label="2 tablespoons Seasoned rice vinegar">Seasoned rice vinegar<span class="ingredients__amount" data-amount-type="tbs" aria-hidden="true">2 tablespoons</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i314">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i633">Soy sauce<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 teaspoon</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i633">
+                    <label class="ingredients__name" id="i633" aria-label="1 teaspoon Soy sauce">Soy sauce<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 teaspoon</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i633">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i175">Sesame oil<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 teaspoon</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i175">
+                    <label class="ingredients__name" id="i175" aria-label="1 teaspoon Sesame oil">Sesame oil<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">1 teaspoon</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i175">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i111">Red pepper flakes to taste
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i111">
+                    <label class="ingredients__name" id="i111" aria-label="Red pepper flakes to taste">Red pepper flakes to taste
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i111">
                     </label>
                   </li>
                   <li class="ingredients__item">
-                    <label class="ingredients__name" id="i369">Toasted sesame seeds<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">2 teaspoons</span>
-                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="ingredients-group i369">
+                    <label class="ingredients__name" id="i369" aria-label="2 teaspoons Toasted sesame seeds">Toasted sesame seeds<span class="ingredients__amount" data-amount-type="tsp" aria-hidden="true">2 teaspoons</span>
+                      <input class="ingredients__checkbox" type="checkbox" aria-labelledby="i369">
                     </label>
                   </li>
                 </ul>
@@ -88,8 +91,8 @@
               </section>
             </div>
           </div>
-        </main>
+        </article>
       </div>
-    </div>
+    </main>
   </body>
 </html>
